@@ -10,6 +10,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        costom: "rgba(0, 255, 255, 0.776)",
       },
     },
   },

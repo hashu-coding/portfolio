@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { homeImg } from "@/Data/data";
-import About from "./about/page";
+import Blog from "@/components/Blog";
+import Skill from "@/components/Skill";
+import Services from "@/components/Services";
+import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
+import Slider from "@/components/Slider";
+
 export default function Home() {
   return (
     <>
@@ -38,7 +44,7 @@ export default function Home() {
         </div>
 
         {/* running after MD */}
-        <div className="hidden w-full h-full bg-gradient-to-tr from-blue-800 via-cyan-800 to-teal-800 rounded-br-[90%] rounded-bl-[20%] relative lg:flex items-center">
+        <div className="hero3 hidden w-full h-full rounded-br-[90%] rounded-bl-[20%] relative lg:flex items-center">
           <div className="w-1/2 pl-16 flex flex-col gap-2">
             <h1 className="text-8xl font-bold font-creepson">Hello i am</h1>
             <h2 className="text-6xl font-bold">Harsh Indora</h2>
@@ -50,10 +56,10 @@ export default function Home() {
             </p>
             <div className="flex gap-4 mt-8">
               <button className="px-8 py-2 bg-gradient-to-tr from-blue-600 to-blue-500 border-2 border-blue-500 rounded-md">
-                Search
+                Downlad-CV
               </button>
               <button className="px-8 py-2 bg-transparent border-2 border-white rounded-md">
-                Search
+                Contact-US
               </button>
             </div>
           </div>
@@ -68,7 +74,12 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <About />
+      <Slider />
+      <Blog />
+      <Skill />
+      <Services />
+      <Projects />
+      <Footer />
     </>
   );
 }

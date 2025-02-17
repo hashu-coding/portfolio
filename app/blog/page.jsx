@@ -1,7 +1,11 @@
 import React from "react";
 
 function blog() {
-  return <div>blog</div>;
+  return (
+    <>
+      <div className="w-full h-screen">blog</div>
+    </>
+  );
 }
 
 export default blog;
