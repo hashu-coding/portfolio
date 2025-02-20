@@ -33,8 +33,8 @@ function Slider() {
             <SwiperSlide
               key={item.id}
               className="flex justify-center items-center">
-              <div className="w-full h-[90vh] flex justify-center items-center bg-zinc-600">
-                <img src={item.img} className="h-full" alt="#" />
+              <div className="w-full h-auto md:h-[90vh] p-2 md:p-0 flex justify-center items-center bg-zinc-600">
+                <img src={item.img} className="h-full md:w-full" alt="#" />
               </div>
             </SwiperSlide>
           );

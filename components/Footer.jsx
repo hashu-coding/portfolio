@@ -8,26 +8,28 @@ import Link from "next/link";
 import { GrMapLocation } from "react-icons/gr";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { BsBrowserSafari } from "react-icons/bs";
+import { footerData } from "@/Data/data";
 
 function Footer() {
   return (
-    <footer className="w-full h-auto md:h-[60vh] bg-zinc-900 px-8">
+    <footer className="w-full h-auto md:h-[60vh] bg-zinc-900 md:px-8">
       <div className="w-full h-[85%] grid gird-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        <div className="p-8 flex flex-col gap-4">
+        <div className="p-8 flex flex-col md:gap-4">
           <h2 className="text-2xl font-bold">About Me</h2>
-          <p className="text-sm text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            voluptate rem ducimus. Odit consectetur earum dolore enim placeat
-            nulla eaque eligendi, nemo ad? Blanditiis, quisquam pariatur!
-            Voluptatum animi quaerat veritatis. Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. amet laborum repellat illum! Neque,
-            iusto.
-          </p>
-          <div className="flex gap-4 mt-6">
-            <FaInstagram className="text-pink-700" />
-            <FaLinkedin className="text-blue-500" />
-            <FiYoutube className="text-red-500" />
-            <FaFacebookSquare className="text-blue-600" />
+          <p className="text-sm text-gray-300">{footerData?.desc}</p>
+          <div className="flex gap-4 mt-2">
+            <a href="https://www.instagram.com/hyy_harshhu">
+              <FaInstagram className="text-pink-700" />
+            </a>
+            <a href="">
+              <FaLinkedin className="text-blue-500" />
+            </a>
+            <a href="">
+              <FiYoutube className="text-red-500" />
+            </a>
+            <a href="">
+              <FaFacebookSquare className="text-blue-600" />
+            </a>
           </div>
         </div>
         <div className="p-8 flex flex-col gap-4">
@@ -59,15 +61,15 @@ function Footer() {
           <h2 className="text-2xl font-bold">Contact </h2>
           <div className="flex items-center gap-4">
             <GrMapLocation className="text-green-600" />
-            <p>uklana mandi hisar haryana</p>
+            <p>{footerData?.address}</p>
           </div>
           <div className="flex items-center gap-4">
             <MdMarkEmailUnread className="text-yellow-600" />
-            <span>harsg@gmail.com</span>
+            <span>{footerData?.email}</span>
           </div>
           <div className="flex items-center gap-4">
             <BsBrowserSafari className="text-blue-600" />
-            <span>heysgghd.com</span>
+            <span>{footerData?.web}</span>
           </div>
           <div className="flex flex-col gap-4">
             <label htmlFor="Email">Send meesage</label>
@@ -78,8 +80,10 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className=" w-full h-[15%] border-t-2 border-zinc-600 flex justify-center items-center">
-        <p>this is footer of my web &#169; || create by Harsh Indora</p>
+      <div className=" w-full h-[15%] border-t-2 border-zinc-600 flex justify-center items-center p-2 md:p-0">
+        <p className="text-sm md:text-md">
+          this is footer of my web &#169; || create by Harsh Indora
+        </p>
       </div>
     </footer>
   );
