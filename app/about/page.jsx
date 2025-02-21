@@ -3,6 +3,7 @@ import Blog from "@/components/Blog";
 import Skill from "@/components/Skill";
 import Footer from "@/components/Footer";
 import { aboutData } from "@/Data/data";
+import Link from "next/link";
 
 function About() {
   return (
@@ -11,9 +12,11 @@ function About() {
         <div className="header1 w-full h-[50vh] text-white flex justify-center items-center">
           <div className="pt-40">
             <div className="flex gap-8 justify-center items-center flex-wrap">
-              <button className="px-8 py-2 rounded-md border-2 border-white bg-transparent font-semibold hover:text-cyan-500 hover:border-cyan-500">
+              <Link
+                href="/"
+                className="px-8 py-2 rounded-md border-2 border-white bg-transparent font-semibold hover:text-cyan-500 hover:border-cyan-500">
                 Home
-              </button>
+              </Link>
               <h4 className="text-3xl font-black">
                 About <span className="text-cyan-500">US</span>
               </h4>

@@ -63,7 +63,7 @@ export default function Home() {
           </div>
           <div className="rounded-2xl w-96 h-96 bg-gray-500 absolute top-1/2 left-2/3 transform -translate-x-1/4 -translate-y-1/2 overflow-hidden flex justify-center items-center">
             <Image
-              src="/images/my1.jpeg"
+              src="/images/my1.jpg"
               width={400}
               height={400}
               className="cursor-pointer duration-700 hover:scale-105"

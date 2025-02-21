@@ -3,9 +3,9 @@ import { projectData } from "@/Data/data";
 
 function Projects() {
   return (
-    <section className="w-full h-auto md:h-[80vh] p-4">
+    <section className="w-full h-auto xl:h-[80vh] p-4">
       <div className="w-full h-[30%] flex justify-center items-center">
-        <h3 className="text-4xl md:text-5xl font-bold my-8 md:my-0">
+        <h3 className="text-4xl md:text-5xl font-bold my-8 xl:my-0">
           Projects
         </h3>
       </div>

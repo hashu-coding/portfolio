@@ -19,7 +19,7 @@ body {
 
 .hero1::before {
   content: "";
-  background-image: url("../public/images/my1.jpeg");
+  background-image: url("../public/images/my1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

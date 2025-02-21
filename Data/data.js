@@ -26,11 +26,11 @@ export const navData = [
   },
 ];
 export const logo = { svg: "images/logo.png" };
-export const homeImg = { img: "images/my1.jpeg" };
+export const homeImg = { img: "images/my1.jpg" };
 
 export const haiderData = {
   name: "Harsh Indora",
-  img: "/images/my1.jpeg",
+  img: "/images/my1.jpg",
   title: "Full-Stake Web Developer",
   desc: "I'm a passionate web developer specializing in React, Next.js, and Tailwind CSS. I build modern, high-performance websites with clean code and seamless user experiences. Let’s bring your ideas to life with cutting-edge web solutions.",
 };
